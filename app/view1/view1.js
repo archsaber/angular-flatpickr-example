@@ -12,7 +12,10 @@ angular.module('myApp.view1', ['ngRoute', 'angular-flatpickr'])
 .controller('View1Ctrl', ['$scope', function($scope) {
     $scope.dateOpts = {
         dateFormat: 'Y-m-d',
-        defaultDate: '2016-03-01 03:30:00 -0300'
+        defaultDate: '2016-03-01 03:30:00 -0300',
+        // noCalendar: true,
+        // enableTime: true,
+        // enableSeconds: true
     };
 
     $scope.datePostSetup = function(fpItem) {
